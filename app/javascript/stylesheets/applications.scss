@@ -24,3 +24,36 @@ main {
   padding: 1.6rem;
   border: 1px solid $gray-500;
 }
+
+h2 {
+  margin-bottom: 1.6rem;
+}
+
+.form-group {
+  margin-bottom: 1.6rem;
+}
+
+// Client Side Validations styling
+.form-group {
+  position: relative;
+}
+
+.field_with_errors {
+  input {
+    border-color: theme-color("danger");
+    color: theme-color("danger");
+  }
+  .message {
+    position: absolute;
+    right: 0;
+    color: theme-color("danger");
+  }
+}
+
+.form-check-label {
+  margin-left: 1.2rem;
+}
+
+.form-check label.message {
+  top: 2.4rem;
+}

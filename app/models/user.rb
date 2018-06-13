@@ -7,4 +7,7 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true
   validates :password, confirmation: true, presence: true, length: { minimum: 8, maximum: 128 }
 
+  attr_accessor :terms_of_service
+  validates :terms_of_service, acceptance: true
+
 end

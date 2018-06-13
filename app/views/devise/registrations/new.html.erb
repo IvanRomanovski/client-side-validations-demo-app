@@ -4,25 +4,31 @@
   <%= devise_error_messages! %>
 
   <div class="form-group">
-    <%= f.label :email %><br />
+    <%= f.label :email %>
     <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control' %>
   </div>
 
   <div class="form-group">
     <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
     <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
   </div>
 
   <div class="form-group">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control' %>
   </div>
 
+  <div class="form-group">
+      <div class="form-check">
+        <%= f.check_box :terms_of_service, class: 'form-check-input'  %>
+        <%= f.label :terms_of_service, class: 'form-check-label' do %>
+          I agree to <a href="#">Terms of service</a>,  <a href="#">Privacy policy</a> and <a href="#">Security policy</a>
+        <% end %>
+      </div>
+    </div>
+
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class: "btn btn-primary" %>
   </div>
 <% end %>
 
