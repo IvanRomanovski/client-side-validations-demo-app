@@ -1,2 +1,3 @@
-# client-side-validations-demo-app
-Rails Client Side Validations Demo App
+# README
+
+Ruby version: 2.4.2
