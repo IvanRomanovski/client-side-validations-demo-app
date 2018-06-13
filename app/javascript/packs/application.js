@@ -7,8 +7,8 @@ global.$ = $
 global.jQuery = $
 
 import 'bootstrap'
-// import 'rails.validations'
-// import 'rails.validations.custom'
+import 'rails.validations'
+import 'rails.validations.extension'
 
 require.context('../stylesheets/', true, /^\.\/[^_].*\.(css|scss|sass)$/i)
 require.context('../images/', true, /\.(gif|jpg|png|svg)$/i)
