@@ -1,0 +1,11 @@
+@import '~bootstrap/scss/functions';
+@import 'variables';
+@import '~bootstrap/scss/bootstrap';
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  height: 100%;
+}
